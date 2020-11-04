@@ -53,9 +53,19 @@ body {
   outline: none;
 }
 
+.calculator-buttons{
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
 button{
-  width: 83px;
-  height: 60px;
-  border-radius: 5px;
+  height: 45px;
   font-size: 32px;
+}
+
+button:last-of-type{
+  grid-row: 2 / 6;
+  grid-column:  4;
+  height: 100%;
 }
